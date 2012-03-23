@@ -1,0 +1,17 @@
+body{border:0px; margin:0px; padding:0px; font-size:12px; background-color:#ccc;}
+div{border:0px;}
+img{border:0px;}
+table{margin:0 auto;width:400px}
+#container{width:600px; margin: 20px auto 0px;text-align:center;border:1px #000 solid}
+
+.titleFont{font-size:18px;}
+.button{margin:5px;width:150px;}
+.textSetting{width:150px; border: 1px solid #999999;}
+.cellStyle IMG:Hover{cursor:hand;}
+.mineTable{background-color:#ccc;border:solid 2px #999999;}
+.mineHeaderCell{width:33%;text-align:center;padding-top:5px;}
+.winFont{color:Red;}
+.loseFont{color:Blue;}
+.savedGame{float:left;border: dotted 1px #999999; margin:3px;} .savedGameMouseOver{float:left;border: solid 1px #E63C74; margin:3px;}
+.savedCell{background-color:#9D9D9D;} .savedCellFlag{background-color:#952C28;} .savedCellAsk{background-color:#060606;} .savedCellEmpty{background-color:#C0C0C0;} .savedCellMineYes{background-color:#7E7E7E;} .savedCellMineNo{background-color:#5B1918;} .savedCellMine{background-color:#E51F1F;}
+.savedCell1{background-color:#0306C7;} .savedCell2{background-color:#0E780C;} .savedCell3{background-color:#E6070A;} .savedCell4{background-color:#00035E;} .savedCell5{background-color:#740D11;} .savedCell6{background-color:#287378;} .savedCell7{background-color:#000000;} .savedCell8{background-color:#7E7E7E;}
