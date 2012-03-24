@@ -318,8 +318,7 @@
     }
     Game.prototype.TimeLapseHandler = function(){
         if(!this.Info.GameStatus.IsStart||this.Info.GameStatus.IsPause) return;
-        this.Info.GameStatus.CostTime++;
-        this.OnCostTime(this.Info.GameStatus.CostTime);
+          	
     }
     Game.prototype.ResetGame = function(){
         this.StopGame();
