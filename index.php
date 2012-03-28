@@ -16,10 +16,10 @@
         	<img id="mineH" src="" alt="" /><img id="mineT" src="" alt="" /><img id="mineN"  src="" alt="" />
         </td>
         <td class="mineHeaderCell">
-            <a href="javascript:newGame();"><img id="statusFace" src="" alt="" /></a>
+            <a><img id="statusFace" src="" alt="" /></a>
         </td>
         <td class="mineHeaderCell">
-            <img id="timeH" src="" alt="" /><img id="timeT" src="" alt="" /><img id="timeN"  src="" alt="" />
+            <img id="timeH" src="Images/Digits/0.gif" alt="" /><img id="timeT" src="Images/Digits/0.gif" alt="" /><img id="timeN"  src="Images/Digits/0.gif" alt="" />
         </td>
      </tr>
      <tr>
@@ -30,13 +30,14 @@
 			$hangNum = $MineSweeper->mines->hangNum;
 			$lieNum = $MineSweeper->mines->lieNum;
 			$mineNum = $MineSweeper->mines->mineNum;
-			echo "<input type='hidden' id='mineNum' value=".$mineNum."/>";
-			for($i=1;$i<$hangNum;$i++){
-				for($j=1;$j<$lieNum;$j++){
+			echo "<input type='hidden' id='mineNum' value=".$mineNum." />";
+			for($i=1;$i<=$hangNum;$i++){
+				for($j=1;$j<=$lieNum;$j++){
 					echo "<input type='image' src='Images/Cells/cell.gif' id=".$i."_".$j."/>";
 				}
 				echo "<br/>";
 			}
+			
 			
 			?>
 		
@@ -63,11 +64,16 @@
      SavedGame:{SavedGame:"savedGame", SavedGameMouseOver:"savedGameMouseOver"}
  };
    
-   
+ 	$("#statusFace").click(function(){window.location.reload()});
 	$(document).ready(function(){
 		start();
+
+		
 	 });
-	 
+
+
+
+	 //本地调用函数
 	 	function start(){
 	 		setInterval(timeLapseHandler,1000);
 			setMineNumHandler(mineNum);
